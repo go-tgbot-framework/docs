@@ -40,8 +40,8 @@ Issues 回報唷～
       - ID (int): 這個聊天室 (或使用者) 的專屬 ID。
       - Type (string): 此聊天室的種類，例如「supergroup」或「private」
       - Title (string): 此聊天室的標題，如果是私訊機器人就會是空白的。
-      - Username (string): 此聊天室的……聊天室名稱？反正就是你熟悉的「@blablabla」，但注意 Username 回傳的不包含「@」這個字符喔！
-        也就是直接就是「blablabla」。
+      - FirstName (string): 使用者的**名**。歐洲和美國人的取名方式是「名在前姓在後」，也因此 FirstName
+        跟我們一般所認知的「姓」是不同的唷！
       - LastName (string): 使用者的**姓**。 (非私訊時則為空白)
       - Username (string): 使用者的……使用者名稱？反正就是你熟悉的「@blablabla」，但注意 Username 回傳的不包含「@」這個字符喔！
         也就是直接就是「blablabla」 (非私訊時則為空白)
