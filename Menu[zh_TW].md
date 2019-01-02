@@ -28,3 +28,9 @@ A: 使用 Pull Request 直接將修正過的文件直接提交給作者，
     - SendMessage: 傳送訊息函式
     - SendMessageBasic: **簡化** 的傳送訊息函式
     - GetMessageBasic:  **簡化** 的取得訊息函式
+
+# 聯絡作者
+- pan93412 (主作者)
+  - Telegram: [@byStarTW_TW](https://t.me/byStarTW_TW)
+  - Gmail: <pan93412@gmail.com>
+  - IRC: ##pan93412_irc (不太常看…… 先看看有沒有 pan93412 在裡面 orz)
