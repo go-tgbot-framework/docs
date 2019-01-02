@@ -31,20 +31,20 @@ Issues 回報唷～
       - IsBot (bool): 這使用者是不是個機器人呢？如果是就回傳 true，反之 false。
       - FirstName (string): 使用者的**名**。歐洲和美國人的取名方式是「名在前姓在後」，也因此 FirstName
         跟我們一般所認知的「姓」是不同的唷！
-      - LastName (string): 使用者的**姓**。
+      - LastName (string): 使用者的**姓**。(若未取姓則為空白)
       - Username (string): 使用者的……使用者名稱？反正就是你熟悉的「@blablabla」，但注意 Username 回傳的不包含「@」這個字符喔！
-        也就是直接就是「blablabla」
+        也就是直接就是「blablabla」(無使用者名稱則為空白)
       - LanguageCode (string): 使用者的語言代碼，例如「zh-hant」之類的。
     - Date (int): Unix 時間格式的訊息傳送時間。
     - Chat (Chat): 使用者傳送此訊息時所在的聊天室 (又譯對話)
       - ID (int): 這個聊天室 (或使用者) 的專屬 ID。
       - Type (string): 此聊天室的種類，例如「supergroup」或「private」
       - Title (string): 此聊天室的標題，如果是私訊機器人就會是空白的。
-      - FirstName (string): 使用者的**名**。歐洲和美國人的取名方式是「名在前姓在後」，也因此 FirstName
-        跟我們一般所認知的「姓」是不同的唷！
-      - LastName (string): 使用者的**姓**。 (非私訊時則為空白)
       - Username (string): 使用者的……使用者名稱？反正就是你熟悉的「@blablabla」，但注意 Username 回傳的不包含「@」這個字符喔！
-        也就是直接就是「blablabla」 (非私訊時則為空白)
+        也就是直接就是「blablabla」(無使用者名稱則為空白)
+      - FirstName (string): 使用者的**名**。歐洲和美國人的取名方式是「名在前姓在後」，也因此 FirstName
+        跟我們一般所認知的「姓」是不同的唷！(非私訊時則為空白)
+      - LastName (string): 使用者的**姓**。 (非私訊或未取姓時則為空白)
       - AllMembersAreAdmins (bool): 是否所有的成員都是管理員？如果是就回傳 true，反之 false。
     - ForwardFrom (User): 被轉傳使用者的資訊，架構同 From，請參考 From 部份。
     - ForwardFromChat (Chat): 被轉傳聊天室的資訊，架構同 Chat，請參考 Chat 部份。
