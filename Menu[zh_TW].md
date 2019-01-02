@@ -21,13 +21,8 @@ A: 使用 Pull Request 直接將修正過的文件直接提交給作者，
   - Module_Basic.md: 模組編寫入門
   - Spec.md: 模組基本規範
   - Basic_Functions: 基礎函式
-    - GetMessage: 取得訊息的函式
-    - GetMe: 取得機器人自身資訊的函式
-    - ForwardMessage: 轉寄訊息函式
-    - SendMedia: 傳送媒體函式
-    - SendMessage: 傳送訊息函式
-    - SendMessageBasic: **簡化** 的傳送訊息函式
-    - GetMessageBasic:  **簡化** 的取得訊息函式
+    - [語言]
+        - Libraries.md: 函式庫完整手冊
 
 # 聯絡作者
 - pan93412 (主作者)
