@@ -14,7 +14,7 @@ A: 使用 Pull Request 直接將修正過的文件直接提交給作者，
 (!) 使用 Issues 提交的文件錯誤優先級較低。
 
 ## 設定機器人
-- Usage.md:
+- SetupBot.md：教你從設定機器人 token 到上線的教學。
 
 ## 模組建置與相關基礎函式
 - Modules: 模組相關文件

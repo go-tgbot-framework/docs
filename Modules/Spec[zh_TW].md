@@ -1,3 +1,4 @@
+# Telegram Bot Framework - 模組規範
 ## 基本準則
 - package 必須以 "main" 起頭
 - 編譯方法：`go build -buildmode=plugin (檔案名稱).go`
