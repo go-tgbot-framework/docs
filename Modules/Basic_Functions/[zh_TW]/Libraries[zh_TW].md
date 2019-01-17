@@ -149,8 +149,6 @@ GetMessageBasic() 甚至自己帶入都行。chat_id 是組數字（聊天室專
 這還是有加一點官方所沒有的功能，但我在文件中都會逐一詳細描述，所以不必太擔心
 這些額外增加的功能你看不懂。
 
-<!-- 待補 -->
-
 #### GetUpdates() 函式
 ```
 // 基本函式：接收訊息函式
@@ -173,4 +171,9 @@ GetMessageBasic() 甚至自己帶入都行。chat_id 是組數字（聊天室專
 func GetUpdates(token string, offset, limit, timeout int, clean_prev_msg bool) *Update
 ```
 
-(作者還在努力趕工中……)
+> 這跟 GetUpdatesBasic() 也差太多了吧…… QAQ
+
+這是跟官方 API 大概一致的版本，也因此裡面有許多不是一般開發者所需的參數。
+所以除非這裡面有你所需的參數，否則我還是比較建議你使用 `GetUpdatesBasic()` --
+簡單化但結果相同的函式。
+
