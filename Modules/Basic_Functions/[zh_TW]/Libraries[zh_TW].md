@@ -46,6 +46,7 @@ Issues 回報唷～
         跟我們一般所認知的「姓」是不同的唷！(非私訊時則為空白)
       - LastName (string): 使用者的**姓**。 (非私訊或未取姓時則為空白)
       - AllMembersAreAdmins (bool): 是否所有的成員都是管理員？如果是就回傳 true，反之 false。
+      - ReplyToMessage (類 Chat)：被回覆的訊息資訊，架構類似 Chat 只是沒有 ReplyToMessage。請參考 Chat 部份。
     - ForwardFrom (User): 被轉傳使用者的資訊，架構同 From，請參考 From 部份。
     - ForwardFromChat (Chat): 被轉傳聊天室的資訊，架構同 Chat，請參考 Chat 部份。
     - ForwardDate (int): 被轉傳訊息當初傳的時間 (Unix 格式)。
@@ -145,35 +146,19 @@ GetMessageBasic() 甚至自己帶入都行。chat_id 是組數字（聊天室專
 最後回傳的內容是未經處理的伺服器傳回內容，大概就是「訊息傳送成功～」的訊息，
 但假如訊息並沒如你期望般正常送出，那你可能要看一下訊息寫了什麼錯誤訊息囉。
 
-### 完整版函式
-這還是有加一點官方所沒有的功能，但我在文件中都會逐一詳細描述，所以不必太擔心
-這些額外增加的功能你看不懂。
+## 更多函式與建構體
+因為時間因素（其實就是懶 XD），所以這文件我可能不會一直更新。
 
-#### GetUpdates() 函式
-```
-// 基本函式：接收訊息函式
-//
-// 請參考文件：
-// https://core.telegram.org/bots/api#getting-updates
-//
-// token: 機器人 (從 @botFather 取得的) Token
-//
-// offset: 若不打算設定 offset，請傳入 -1。
-//
-// limit: 若不打算設定 limit，請傳入 -1。
-//
-// timeout: 若不打算設定 timeout，請傳入 -1。
-//
-// clean_prev_msg: 是否透過設定上一個接收的 offset 來防止已抓取訊息再次出現。
-// 可參閱：https://core.telegram.org/bots/faq#long-polling-gives-me-the-same-updates-again-and-again
-//
-// 回傳內容：Update 建構體。
-func GetUpdates(token string, offset, limit, timeout int, clean_prev_msg bool) *Update
-```
+<!--
+  以下皆為中文 only（總不能翻譯註釋吧……），但您能將 go doc 輸出的內容
+  （或 GoDoc 的內容）複製後直接翻譯，並建立成 Reference[語言].md。
+-->
 
-> 這跟 GetUpdatesBasic() 也差太多了吧…… QAQ
+以下為我建議的幾個文件檢視方式：
 
-這是跟官方 API 大概一致的版本，也因此裡面有許多不是一般開發者所需的參數。
-所以除非這裡面有你所需的參數，否則我還是比較建議你使用 `GetUpdatesBasic()` --
-簡單化但結果相同的函式。
-
+- [在 GoDoc 檢視](https://www.godoc.org/github.com/go-tgbot-framework/TGBotLib)
+  
+  最建議的方式。TGBotLib Git 庫有什麼變動，這裡會即時顯示變動。
+- 使用 `go doc` 檢視文件
+  
+  在您 clone 回來的 TGBotLib 版本庫輸入 `go doc` 就能檢視離線版文件。
